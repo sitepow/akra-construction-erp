@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.css-um1o6k {
+  @apply text-gray;
+}
+
+* {
+  letter-spacing: -0.035em;
+}
+
+.css-1tqrhto > .ps-menu-button,
+.css-16jesut > .ps-menu-button,
+.css-1t8x7v1 > .ps-menu-button {
+  height: 40px !important;
+}
+
+.css-wlra1l {
+  @apply rounded-large !important;
+}
+
+.ps-submenu-content.css-wlra1l {
+  @apply bg-white border dark:bg-[#222222] dark:border-dark !important;
+}
+
+@media print {
+  .page-break {
+    page-break-inside: avoid;
+  }
+
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+}
+
+@layer base {
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+.MuiBox-root {
+  @apply bg-white dark:bg-[#18181b] !important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-sizeSmall.MuiInputBase-adornedStart.MuiInputBase-adornedEnd.css-1dmke6k-MuiInputBase-root-MuiOutlinedInput-root {
+  @apply border-none dark:border-dark shadow-none !important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-sizeSmall.MuiInputBase-adornedStart.MuiInputBase-adornedEnd {
+  @apply border-2 rounded-lg dark:border-dark outline-none !important;
+}
+
+[data-slot='content'] {
+  td,
+  th {
+    @apply border-none !important;
+  }
+}
+
+.ps-sidebar-container {
+  background-color: transparent !important;
+  @apply dark:border-dark shadow-none z-40 !important;
+}
+
+.css-1wvake5 {
+  @apply border-none dark:border-r dark:border-dark shadow-none dark:text-inherit !important;
+}
+
+.ps-menu-button:hover {
+  background-color: transparent !important;
+}
+
+.ps-submenu-content {
+  background-color: transparent !important;
+}
+
+.css-118d58w-MuiButtonBase-root-MuiTableSortLabel-root .MuiTableSortLabel-icon,
+.css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon,
+.css-bg3lg4-MuiButtonBase-root-MuiTableSortLabel-root .MuiTableSortLabel-icon,
+.css-bgz9z4-MuiButtonBase-root-MuiTableSortLabel-root .MuiTableSortLabel-icon,
+.css-1j43wpm-MuiButtonBase-root-MuiTableSortLabel-root .MuiTableSortLabel-icon {
+  @apply dark:text-white !important;
+}
+
+.MuiSvgIcon-root,
+.MuiListItemIcon-root,
+.MuiInputBase-input,
+.MuiFormHelperText-root,
+.MuiTypography-root,
+.MuiTypography-body1,
+.css-1dt50la-MuiTypography-root {
+  @apply dark:text-white !important;
+}
+
+tr td,
+th {
+  @apply border-[#f2f2f2] border-l dark:border-dark !important;
+}
+
+th {
+  @apply border-t dark:border-dark !important;
+}
+
+.no-border {
+  tr td,
+  th {
+    @apply border-none !important;
+  }
+
+  th {
+    @apply border-none !important;
+  }
+}
+
+tr:hover td {
+  @apply bg-transparent !important;
+}
+
+tr:hover td::after {
+  background-color: transparent !important;
+}
+
+tr.Mui-selected td {
+  @apply bg-[#f6f8fa] dark:bg-[#111111] !important;
+}
+
+tr.Mui-selected td::after {
+  background-color: transparent !important;
+}
+
+.MuiTableSortLabel-icon {
+  @apply text-white !important;
+}
+
+.MuiPaper-root {
+  @apply border shadow-small rounded-large dark:border-none dark:bg-[#18181b] !important;
+}
+
+.MuiTableCell-head,
+.MuiTableCell-body,
+.MuiTableCell-alignLeft::before,
+.MuiList-root,
+.MuiList-padding,
+.MuiMenu-list,
+.MuiTableCell-alignRight {
+  @apply dark:bg-[#18181b] dark:text-white dark:border-dark !important;
+}
+
+.MuiTableCell-body {
+  @apply dark:border-dark !important;
+}
+
+.toolbar button.is-active {
+  @apply bg-primary text-white border-none;
+}
+
+.toolbar button.not-active {
+  @apply text-[#59636e];
+}
+
+.ProseMirror {
+  min-height: 500px;
+  @apply bg-[#f9f9f9] p-2.5 rounded-small dark:bg-[#0d0d0d] !important;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.tiptap {
+  :first-child {
+    margin-top: 0;
+  }
+
+  input[type='checkbox'] {
+    @apply w-6 h-6 appearance-none bg-[#f5f4f4] dark:bg-[#ffffff1d] rounded-full cursor-pointer;
+  }
+
+  input[type='checkbox']:checked {
+    @apply border-transparent;
+  }
+
+  input[type='checkbox']:checked::after {
+    content: '✔';
+    @apply text-primary dark:text-white text-center text-xs;
+    display: block;
+    line-height: 1.5rem;
+  }
+
+  h2,
+  h3 {
+    margin-top: 20px;
+  }
+
+  ul,
+  ol {
+    padding: 0 1rem;
+    margin: 1.25rem 1rem 1.25rem 0.4rem;
+
+    li p {
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
+    }
+  }
+
+  ul[data-type='taskList'] {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+
+    li {
+      align-items: flex-start;
+      display: flex;
+
+      > label {
+        flex: 0 0 auto;
+        margin-right: 0.5rem;
+        user-select: none;
+      }
+
+      > div {
+        flex: 1 1 auto;
+      }
+    }
+
+    input[type='checkbox'] {
+      cursor: pointer;
+    }
+
+    ul[data-type='taskList'] {
+      margin: 0;
+    }
+  }
+
+  pre {
+    @apply bg-primary-50;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1rem;
+
+    code {
+      background: none;
+      color: inherit;
+      font-size: 0.8rem;
+      padding: 0;
+    }
+  }
+
+  img {
+    display: block;
+    height: auto;
+    margin: 1.5rem 0;
+    max-width: 100%;
+
+    &.ProseMirror-selectednode {
+      outline: 3px solid var(--purple);
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0;
+    overflow: hidden;
+    table-layout: fixed;
+    width: 100%;
+
+    td,
+    th {
+      box-sizing: border-box;
+      min-width: 1em;
+      padding: 6px 8px;
+      position: relative;
+      vertical-align: top;
+
+      > * {
+        margin-bottom: 0;
+      }
+    }
+
+    th {
+      @apply font-normal text-left !important;
+    }
+
+    .selectedCell:after {
+      @apply bg-primary-50;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      pointer-events: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .column-resize-handle {
+      @apply bg-primary-50;
+      bottom: -2px;
+      pointer-events: none;
+      position: absolute;
+      right: -2px;
+      top: 0;
+      width: 4px;
+    }
+  }
+
+  .tableWrapper {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+  }
+
+  &.resize-cursor {
+    cursor: ew-resize;
+    cursor: col-resize;
+  }
+
+  code {
+    @apply bg-primary-50;
+    border-radius: 0.4rem;
+    font-size: 0.85rem;
+    padding: 0.25em 0.3em;
+  }
+
+  mark {
+    @apply bg-primary-50;
+    border-radius: 0.4rem;
+    box-decoration-break: clone;
+    padding: 0.1rem 0.3rem;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover {
+      @apply text-primary;
+    }
+  }
+
+  blockquote {
+    padding-left: 2rem;
+  }
+}
+
+.tiptap-preview {
+  table {
+    th,
+    td {
+      @apply border border-[#0000001a];
+    }
+  }
+}
+
+.tiptap-dev {
+  table {
+    th,
+    td {
+      @apply border border-[#0000001a] dark:border-dark;
+    }
+  }
+}
+
+.disable-text-white {
+  @apply text-black;
+}
